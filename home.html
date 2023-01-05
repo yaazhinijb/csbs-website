@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title> CSBS </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- to make the website work on all devices and screen resolutions -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- For Icons -->
+</head>
+<body> 
+
+   <!-- Navigation -->
+   <div class="topnav">
+    <a class="active" href="home.html"> <i class="fa fa-home"> </i> Home </a>
+    <a href="vision.html"> <i class="fa fa-trophy"> </i> Vision </a>
+    <a href="contact.html"> <i class="fa fa-phone"> </i> Contact Us </a>
+   </div>
+
+   <!-- Side Nav Bar -->
+   <div id="mySideNav" class="sidenav">
+    <a href="clubs.html" id="clubs">  <i class="fa fa-paper-plane"> </i> Clubs </a>
+    <a href="upcomingEvents.html" id="events"> <i class="fa fa-code"> </i> Events </a>
+    <a href="faculty.html" id="faculty"> <i class="fa fa-institution"> </i> Faculty </a>
+   </div>
+   
+   <!-- Slideshow -->
+   <div id="slides">
+     <img class="mySlides" src="https://marketplace.canva.com/EAD64pxlL2M/1/0/1600w/canva-pink-and-peach-technology-linkedin-banner-at-iM-wkzLI.jpg" style="width: 100%">
+     <img class="mySlides" src="https://www.tricentis.com/wp-content/uploads/2019/01/technology-background-header-1120x389.png" style="width: 100%; height: 80%">
+     <img class="mySlides" src="https://www.indiumsoftware.com/blog/wp-content/uploads/2019/01/7-Reasons-Why-Software-Testing-is-Important.jpg" style="width: 100%; height: 80%" >
+     <img class="mySlides" src="https://linkedinimagesdotcom.files.wordpress.com/2016/04/programming-wallpaper-1920x10801.jpg" style="width: 100%; height: 80%">
+   </div>
+   
+   <script>
+   //Automatically change slides within 3 seconds
+     var myIndex=0;
+     slide();
+     function slide(){
+
+       var i;
+       var x=document.getElementsByClassName("mySlides");
+       for(i=0; i<x.length; i++){
+         x[i].style.display="none";
+       }
+       myIndex++;
+       if(myIndex > x.length){myIndex = 1}
+         x[myIndex-1].style.display="block";
+         setTimeout(slide, 3000);
+       }
+     </script> 
+
+    <!-- Main --> 
+    <div class="main">
+     <h4 style="font-size:30px; text-align:center; margin-top: 7%; font-family: Monospace; color: #808080"> Department of Computer Science and Business Systems </h4>
+     <p align="justify" style="margin-top: 37%; margin-left:6%; margin-right: 6%; font-size: 17px; color: #707070; font-family: Calibri;"> Computer Science and Business System (CSBS) is one of the popular courses among engineering aspirants which mainly focuses on computation, analysis of algorithms, programming languages, program design, software engineering, computer hardware, computer networks and problem solving skills. This program has roots in electrical, electronics and communication engineering, mathematics, and linguistics. Students study the design, development and analysis of software and hardware used to solve problems for various business, scientific and social contexts. Since computers solve most of the complex problems in a simplified way, it provides the sophistication to the world and touches the human lives in all the aspects such as education, transportation, entertainment, banking, mass communication, social media, hospital management, businesses, supply chain management, etc. Computer Science and Business System is inherently&nbsp; a interdisciplinary subject, it link to the disciplines including psychology, biology, mathematics, physics, education, art and music with the subjects of bioinformatics, electronics, operations research, theory of computation, help students to understand how Computer Science and Business System fits in to a wide range of domains in the world. </p>
+     <br> <br>
+
+     <!-- Card -->
+     <center> <a href="https://info.tcs.com/computer-science-business-systems.html#:~:text=To%20address%20the%20growing%20need,aims%20to%20ensure%20that%20the" style="color: #6495ED; text-decoration: none">
+     <div class="card">
+      <img src="https://images.financialexpress.com/2021/03/TCS-1.jpg" alt="TCS" style="width: 100%; height: 50%">
+        <div class="container">
+         <h3 style="color: #FF8080"> <b> Tata Consultancy Services </b> </h3>
+         <p class="title" style="color:#808080; font-family: Monospace; font-size: 15px; font-weight: bold"> TCS launches Undergraduate Engineering Course on "Computer Science & Business Systems" </p>
+         <p style="color: black"> To address the growing need of engineering talent with skills in digital technology, TCS, in partnership with leading academicians across India, has designed a curriculum for 4 years undergraduate program on Computer Science titled “Computer Science and Business Systems (CSBS) </p>
+        </div>
+      </div> </a> </center>
+      </div>
+      
+    </div>
+
+<br> <br> <br>  
+
+ </body>
+ </html>
+
